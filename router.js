@@ -1,0 +1,34 @@
+define(['backone'],function(backone){
+	var Router = backone.Router.extend({
+		routes:{
+			'shouye':'shouyeFunc',
+			'paradise':'paradiseFunc',
+			'my':'myFunc',
+			'card':'cardFunc'
+		},
+		shouyeFunc:function(){
+			require(['./js/text.js!shouye.html'],function(content){
+				$('.container').html(content);
+				console.log(content);
+			})
+		}
+		paradiseFunc:function() {
+			require(['./js/text.js!paradise.html'],function(content){
+				$('.container').html(content);
+				console.log(content);
+			});
+		}
+		myFunc:function(){
+			require(['.js/text.js!my.html'],function(content){
+				$('.container').html(content);
+				console.log(content);
+			})
+		}
+		cardFunc:function(){
+			require(['.js/text.js!card.html'],function(content){
+				$('.container').html(content);
+				console.log(content);
+			});
+		}
+	});
+});

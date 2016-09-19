@@ -1,0 +1,100 @@
+/*全局样式*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul,
+li,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	border: none;
+}
+
+.clear:after {
+	content: '.';
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.container{
+	width: 10rem;
+	height: 16.25rem;
+}
+
+
+
+
+/*底部*/
+footer{
+	width: 10rem;
+	height: 1.5rem;
+	background: #fff;
+	position: fixed;
+	z-index: 999;
+	bottom: 0;
+	border-top: 1px solid red;
+}
+
+footer ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	border: 1px solid yellow;
+}
+
+footer ul li {
+	flex: auto;
+	/*float: left;
+	width: 2.48rem;
+	height: 1.5rem;*/
+	text-align: center;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+
+footer a{
+	display: block;
+	margin: 0.68rem 0 0 0;
+	font-size: 0.83rem;
+	color: #999999;
+}
+
+/*.list li:nth-of-type(1){
+	background-image: url(../images/2_10.gif);
+	background-repeat: no-repeat;
+	background-position: .84rem .1rem;
+	background-size: .7rem;
+}
+.list li:nth-of-type(2){
+	background-image: url(../images/2_14.gif);
+	background-repeat: no-repeat;
+	background-position: .84rem .1rem;
+	background-size: .7rem;
+}
+.list li:nth-of-type(3){
+	background-image: url(../images/2_16.gif);
+	background-repeat: no-repeat;
+	background-position: .84rem .1rem;
+	background-size: .6rem;
+}
+.list li:nth-of-type(4){
+	background-image: url(../images/2_17.png);
+	background-repeat: no-repeat;
+	background-position: .84rem .1rem;
+	background-size: .7rem;
+}*/
+
+.list p{
+	font-size: .48rem;
+	margin-top: .9rem;
+}

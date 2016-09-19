@@ -1,0 +1,15 @@
+require.config({
+	paths:{
+		jquery:'./js/jquery-1.12.3.js',
+		underscore:'./js/underscore',
+		backbone:'./js/backbone'
+	},
+	shim:{
+		'underscore':{
+			export:'_'
+		}
+	}
+});
+require(['jquery','backbone','router.js'],function($,backbone,router){
+	Backbone.history.start();
+});
